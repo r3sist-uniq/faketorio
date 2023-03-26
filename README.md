@@ -1,3 +1,4 @@
+
 # Faketorio
 
 Want to play co-op with your friends but don't want to rent servers?
@@ -17,12 +18,23 @@ Minecraft
 
 more?
 
+Basically everywhere you need machines to sync a folder automatically. 
 
 ## How to make it work?
 
+Create a common github/gitlab repo where you want your fake server to be. One of your friends pushes the already saved game files into it. 
+
+Your second friend will now go to the location where his factorio files are saved. 
+
+Then:
 ```python
+git init
+git commit -a -m "your commit message"
+git pull --allow-unrelated-histories
 #update this
 ```
+
+Now you can start the python program from both of your computers. Magic. You can even create this as a background process which boots automatically on startup. Magic. 
 
 ## Contributing
 
@@ -34,3 +46,5 @@ Please make sure to update tests as appropriate.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
