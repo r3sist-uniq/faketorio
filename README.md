@@ -5,26 +5,24 @@ Want to play co-op with your friends but don't want to rent servers?
 
 Here is a small (dumb) python script which acts like a fake server. All it does it pushes and pulls from a remote git repository. 
 
-Basically, you host, play together with your friend, save your world, your friend will automatically find it on their computer. 
+Basically, you host, play together with your friend, save your world, and your friend will automatically find the newly saved world their computer. 
 
-You can use this an .exe , and run it as a background process. Meaning, it will keep running in the background without you knowing. 
+You can build this as an .exe (through pyinstaller) , and run it as a background process. Meaning, it will keep running in the background without you knowing. 
 
 ## Supported Games
 
-Factorio 
+Basically everywhere you need computers to sync a folder automatically (not just games, ofcourse). 
 
+Factorio 
 
 Minecraft
 
 more?
 
-Basically everywhere you need computers to sync a folder automatically. 
-
 ## How to make it work?
 
-Create a common github/gitlab repo where you want your fake server to be. One of your friends pushes the already saved game files into it. 
-
-Your second friend will now go to the location where his factorio files are saved. 
+* One of your friend creates a common github/gitlab repo where you guys want your files to be saved (you guys can do it come on) and pushes his saved files if he wants to.  
+* All of you initialize a git repo where your game (example: Factorio) saves are saved. Add the common github remote. 
 
 Then:
 ```python
@@ -32,15 +30,15 @@ git init
 git commit -a -m "your commit message"
 git pull --allow-unrelated-histories
 ```
-
-To build an .exe file , install pyinstaller
-
-Then:
+* Change the save_directory variable in the python script, to where your files are saved. (note: this is the relative location of your file from where you are executing the script or the .exe)
+* Make all your friends run this script (or .exe). And you guys are good to go :)
+(optional but good) Build a .exe and run it :) 
+* To build an .exe file , install pyinstaller, And:
 ```python
 pyinstaller --onefile fake_server.py   
 ```
 
-Now you can start the python program from both of your computers. Magic. You can even create this as a background process which boots automatically on startup. Magic. 
+You can even create this as a background process which boots automatically on startup. Magic. 
 
 ## NOTE
 
@@ -50,10 +48,7 @@ But, since we are using git, JUST go back to a previous commit, and resurrect yo
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+sure man
 
 ## License
 
