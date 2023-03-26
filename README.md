@@ -18,7 +18,7 @@ Minecraft
 
 more?
 
-Basically everywhere you need machines to sync a folder automatically. 
+Basically everywhere you need computers to sync a folder automatically. 
 
 ## How to make it work?
 
@@ -31,7 +31,13 @@ Then:
 git init
 git commit -a -m "your commit message"
 git pull --allow-unrelated-histories
-#update this
+```
+
+To build an .exe file , install pyinstaller
+
+Then:
+```python
+pyinstaller --onefile fake_server.py   
 ```
 
 Now you can start the python program from both of your computers. Magic. You can even create this as a background process which boots automatically on startup. Magic. 
