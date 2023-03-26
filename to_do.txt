@@ -1,0 +1,6 @@
+
+can u make the user experience better?, someone wanting to download. they just download and it works - perhaps would have to make a GUI for that 
+git LFS?
+
+what happens if a save changes while you are playing in it, lol 
+add a config file, which the process finds the file directory and all from while running (i guess runtime is important, since people wont have to build it, just change the file )
