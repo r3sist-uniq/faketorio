@@ -7,7 +7,7 @@ Here is a small (dumb) python script which acts like a fake server. All it does 
 
 Basically, you host, play together with your friend, save your world, and your friend will automatically find the newly saved world on their computer. How? See below
 
-You can build this as an .exe (through pyinstaller) , and run it as a background process. Meaning, it will keep running in the background without you knowing. 
+You can run it through the python script OR even build this as an .exe (through pyinstaller) , and run it as a background process. Meaning, it will keep running in the background without you knowing. 
 
 ## Supported Games
 
