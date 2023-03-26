@@ -42,6 +42,12 @@ pyinstaller --onefile fake_server.py
 
 Now you can start the python program from both of your computers. Magic. You can even create this as a background process which boots automatically on startup. Magic. 
 
+## NOTE
+
+This is made to sync a folder between different computers. If your friend goes rogue and deletes your main file, it WILL get deleted in your computer too. 
+
+But, since we are using git, JUST go back to a previous commit, and resurrect your world :) 
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

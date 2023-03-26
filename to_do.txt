@@ -3,3 +3,4 @@ can u make the user experience better?, someone wanting to download. they just d
 git LFS?
 
 what happens if a save changes while you are playing in it, lol 
+what happens if one deletes a file? 

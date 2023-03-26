@@ -2,3 +2,6 @@
 /src/build
 /src/dist
 *.spec
+.env
+/build
+/dist
